@@ -38,7 +38,7 @@ function App() {
         {filteredData.length > 0
           ? filteredData.map((each) => {
               return (
-                <div className="border border-secondary m-2 flag-div">
+                <div className="border border-secondary m-2 flag-div countryCard">
                   <img src={`${each.flags.png}`} alt={each.name.common} />
                   <h1 className="country-name">{each.name.common}</h1>
                 </div>

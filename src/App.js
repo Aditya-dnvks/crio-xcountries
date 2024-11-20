@@ -8,11 +8,9 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const resp = await fetch(
-          "https://restcountries.com/v3.1/all"
-        );
+        const resp = await fetch("https://restcountries.com/v3.1/all");
 
-// https://xcountries-backend.azurewebsites.net/all
+        // https://xcountries-backend.azurewebsites.net/all
         const data = await resp.json();
         setData(data);
         setFilteredData(data);
@@ -25,7 +23,7 @@ function App() {
 
   const handleSearch = (e) => {
     const filtered = countryData.filter((each) =>
-      each.name.toLowerCase().includes(e.target.value.toLowerCase())
+      each.name.common.toLowerCase().includes(e.target.value.toLowerCase())
     );
     setFilteredData(filtered);
     console.log(e.target.value);

@@ -41,7 +41,7 @@ function App() {
           ? filteredData.map((each) => {
               return (
                 <div className="border border-secondary m-2 flag-div">
-                  <img src={`${each.flags}`} alt={each.name} />
+                  <img src={`${each.flags.png}`} alt={each.name} />
                   <h1 className="country-name">{each.name}</h1>
                 </div>
               );

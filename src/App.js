@@ -40,7 +40,7 @@ function App() {
               return (
                 <div className="border border-secondary m-2 countryCard">
                   <img src={`${each.flags.png}`} alt={each.name.common} />
-                  <h1 className="country-name">{each.name.common}</h1>
+                  <h2 className="country-name">{each.name.common}</h2>
                 </div>
               );
             })

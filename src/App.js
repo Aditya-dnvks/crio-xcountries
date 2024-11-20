@@ -9,9 +9,10 @@ function App() {
     const fetchData = async () => {
       try {
         const resp = await fetch(
-          "https://xcountries-backend.azurewebsites.net/all"
+          "https://restcountries.com/v3.1/all"
         );
 
+// https://xcountries-backend.azurewebsites.net/all
         const data = await resp.json();
         setData(data);
         setFilteredData(data);

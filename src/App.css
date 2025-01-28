@@ -1,16 +1,46 @@
+.app-container {
+  padding: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.search-container {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.search-input {
+  width: 75%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
 .countryCard {
-  height: 150px;
-  width: 150px;
-  border-radius: 6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.country-flag {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 .country-name {
-  font-size: 16px;
-  margin: 10px;
-}
-
-img {
-  width: 100%;
-  height: 60%;
-  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
 }

@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const resp = await fetch("https://restcountries.com/v3.1/all");
+        const resp = await fetch("https://countries-search-data-prod-812920491762.asia-south1.run.app/countries");
 
         // https://xcountries-backend.azurewebsites.net/all
         const data = await resp.json();

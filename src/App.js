@@ -30,16 +30,16 @@ function App() {
   };
 
   return (
-    <div className="p-3">
-      <div className="text-center">
-        <input type="text" className="w-75 m-3" onChange={handleSearch} />
+    <div className="app-container">
+      <div className="search-container">
+        <input type="text" className="search-input" onChange={handleSearch} />
       </div>
-      <div className="d-flex flex-wrap justify-content-center align-items-center text-center">
+      <div className="countries-container">
         {filteredData.length > 0
           ? filteredData.map((each) => {
               return (
-                <div className="border border-secondary m-2 countryCard">
-                  <img src={`${each.flags.png}`} alt={each.name.common} />
+                <div className="countryCard" key={each.cca3}>
+                  <img src={`${each.flags.png}`} alt={each.name.common} className="country-flag" />
                   <h2 className="country-name">{each.name.common}</h2>
                 </div>
               );

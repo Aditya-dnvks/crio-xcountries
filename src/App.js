@@ -23,7 +23,7 @@ function App() {
 
   const handleSearch = (e) => {
     const filtered = countryData.filter((each) =>
-      each.name.common.toLowerCase().includes(e.target.value.toLowerCase())
+      each.common.toLowerCase().includes(e.target.value.toLowerCase())
     );
     setFilteredData(filtered);
     console.log(e.target.value);
@@ -39,8 +39,8 @@ function App() {
           ? filteredData.map((each) => {
               return (
                 <div className="countryCard" key={each.cca3}>
-                  <img src={`${each.flags.png}`} alt={each.name.common} className="country-flag" />
-                  <h2 className="country-name">{each.name.common}</h2>
+                  <img src={`${each.png}`} alt={each.common} className="country-flag" />
+                  <h2 className="country-name">{each.common}</h2>
                 </div>
               );
             })
